@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
-import logo from "@/assets/logo-valdireni.png";
+import logo from "@/assets/logo-valdireni-horiz.png";
 import { cn } from "@/lib/utils";
 
 const links = [
@@ -30,9 +30,9 @@ const Navbar = () => {
         scrolled ? "bg-background/85 backdrop-blur-xl border-b border-border" : "bg-transparent"
       )}
     >
-      <div className="container-editorial flex items-center justify-between h-20">
+      <div className="container-editorial flex items-center justify-between h-24 md:h-28">
         <a href="#top" className="flex items-center gap-3" aria-label="Valdireni Alves">
-          <img src={logo} alt="Valdireni Alves" className="h-12 w-auto md:h-14" />
+          <img src={logo} alt="Valdireni Alves - Especialista em comunicação e oratória" className="h-16 w-auto md:h-20 lg:h-24" />
         </a>
 
         <nav className="hidden lg:flex items-center gap-9">
