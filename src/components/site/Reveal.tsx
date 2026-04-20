@@ -53,8 +53,7 @@ const Reveal = ({
 
   return (
     <Tag
-      // @ts-expect-error - dynamic tag ref typing
-      ref={ref}
+      ref={ref as never}
       style={{ transitionDelay: `${delay}ms`, animationDelay: `${delay}ms` }}
       className={cn("reveal", `reveal-${variant}`, visible && "is-visible", className)}
     >
