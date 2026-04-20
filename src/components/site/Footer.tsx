@@ -15,8 +15,11 @@ const Footer = () => {
           <a href="#palestras" className="hover:text-coral transition-colors">Palestras</a>
           <a href="#contato" className="hover:text-coral transition-colors">Contato</a>
         </div>
-        <div className="text-xs text-cream/50">
+        <div className="text-xs text-cream/50 text-center md:text-right">
           © {new Date().getFullYear()} Valdireni Alves
+          <span className="block md:inline md:ml-2 text-cream/40">
+            · Criado por <a href="#" className="text-coral hover:text-coral-deep transition-colors">LionLobs</a>
+          </span>
         </div>
       </div>
     </footer>

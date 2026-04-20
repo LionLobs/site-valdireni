@@ -116,6 +116,42 @@ const Contact = () => {
             >
               {loading ? "Enviando…" : "Enviar via WhatsApp →"}
             </button>
+
+            <div className="pt-6 mt-2 border-t border-cream/10">
+              <p className="text-xs tracking-[0.25em] uppercase text-cream/50 mb-4 text-center">
+                Ou fale direto
+              </p>
+              <div className="grid grid-cols-3 gap-3">
+                <a
+                  href="https://wa.me/5541992885787"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="WhatsApp"
+                  className="flex flex-col items-center gap-2 py-3 border border-cream/15 hover:bg-coral hover:border-coral transition-all group"
+                >
+                  <Phone size={18} className="text-cream group-hover:text-cream" />
+                  <span className="text-[10px] tracking-wider uppercase text-cream/70 group-hover:text-cream">WhatsApp</span>
+                </a>
+                <a
+                  href="https://instagram.com/valdirenialvesjornalista"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Instagram"
+                  className="flex flex-col items-center gap-2 py-3 border border-cream/15 hover:bg-coral hover:border-coral transition-all group"
+                >
+                  <Instagram size={18} className="text-cream group-hover:text-cream" />
+                  <span className="text-[10px] tracking-wider uppercase text-cream/70 group-hover:text-cream">Instagram</span>
+                </a>
+                <a
+                  href="mailto:contato@valdirenialves.com.br"
+                  aria-label="E-mail"
+                  className="flex flex-col items-center gap-2 py-3 border border-cream/15 hover:bg-coral hover:border-coral transition-all group"
+                >
+                  <Mail size={18} className="text-cream group-hover:text-cream" />
+                  <span className="text-[10px] tracking-wider uppercase text-cream/70 group-hover:text-cream">E-mail</span>
+                </a>
+              </div>
+            </div>
           </form>
         </div>
       </div>
