@@ -9,6 +9,7 @@ import Book from "@/components/site/Book";
 import Testimonials from "@/components/site/Testimonials";
 import Contact from "@/components/site/Contact";
 import Footer from "@/components/site/Footer";
+import Reveal from "@/components/site/Reveal";
 import { useEffect } from "react";
 
 const Index = () => {
@@ -65,15 +66,15 @@ const Index = () => {
     <main className="min-h-screen bg-background overflow-x-hidden">
       <Navbar />
       <Hero />
-      <Marquee items={credentials} variant="ink" />
-      <About />
-      <Talks />
-      <WhyHire />
-      <Gallery />
-      <Marquee items={clients} variant="cream" reverse />
-      <Book />
-      <Testimonials />
-      <Contact />
+      <Reveal variant="fade"><Marquee items={credentials} variant="ink" /></Reveal>
+      <Reveal variant="up"><About /></Reveal>
+      <Reveal variant="up" delay={80}><Talks /></Reveal>
+      <Reveal variant="up"><WhyHire /></Reveal>
+      <Reveal variant="scale"><Gallery /></Reveal>
+      <Reveal variant="fade"><Marquee items={clients} variant="cream" reverse /></Reveal>
+      <Reveal variant="left"><Book /></Reveal>
+      <Reveal variant="up"><Testimonials /></Reveal>
+      <Reveal variant="up"><Contact /></Reveal>
       <Footer />
     </main>
   );

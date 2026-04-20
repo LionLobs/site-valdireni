@@ -8,7 +8,6 @@ interface RevealProps {
   variant?: Variant;
   delay?: number;
   className?: string;
-  as?: keyof JSX.IntrinsicElements;
   /** 0–1 viewport intersection ratio that triggers the reveal */
   threshold?: number;
 }
@@ -22,10 +21,9 @@ const Reveal = ({
   variant = "up",
   delay = 0,
   className,
-  as: Tag = "div",
   threshold = 0.15,
 }: RevealProps) => {
-  const ref = useRef<HTMLElement | null>(null);
+  const ref = useRef<HTMLDivElement | null>(null);
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
@@ -52,13 +50,13 @@ const Reveal = ({
   }, [threshold]);
 
   return (
-    <Tag
-      ref={ref as never}
-      style={{ transitionDelay: `${delay}ms`, animationDelay: `${delay}ms` }}
+    <div
+      ref={ref}
+      style={{ transitionDelay: `${delay}ms` }}
       className={cn("reveal", `reveal-${variant}`, visible && "is-visible", className)}
     >
       {children}
-    </Tag>
+    </div>
   );
 };
 
