@@ -12,7 +12,7 @@ const Marquee = ({ items, reverse = false, variant = "ink" }: MarqueeProps) => {
   };
 
   return (
-    <div className={`${variants[variant]} py-6 overflow-hidden`}>
+    <div className={`${variants[variant]} py-3 md:py-4 overflow-hidden`}>
       <div className="marquee">
         <div className={`marquee-track ${reverse ? "marquee-track-reverse" : ""}`}>
           {[...items, ...items, ...items].map((item, i) => (
