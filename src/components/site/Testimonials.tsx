@@ -18,16 +18,16 @@ const items = [
 
 const Testimonials = () => {
   return (
-    <section id="depoimentos" className="py-24 lg:py-32">
+    <section id="depoimentos" className="py-24 lg:py-32 bg-coral text-cream">
       <div className="container-editorial">
         <div className="max-w-3xl mb-16">
           <div className="flex items-center gap-3 mb-6">
-            <span className="h-px w-12 bg-coral" />
-            <span className="text-xs tracking-[0.3em] uppercase text-muted-foreground font-medium">
+            <span className="h-px w-12 bg-cream" />
+            <span className="text-xs tracking-[0.3em] uppercase text-cream/80 font-medium">
               Depoimentos
             </span>
           </div>
-          <h2 className="font-serif text-4xl lg:text-6xl leading-[1.05] tracking-tight text-balance">
+          <h2 className="font-serif text-4xl lg:text-6xl leading-[1.05] tracking-tight text-balance text-cream">
             O que dizem sobre o trabalho de Valdireni.
           </h2>
         </div>
@@ -36,7 +36,7 @@ const Testimonials = () => {
           {items.map((t, i) => (
             <figure
               key={i}
-              className="p-8 lg:p-10 bg-cream border border-border flex flex-col justify-between min-h-[320px] hover:shadow-elegant transition-shadow duration-500"
+              className="p-8 lg:p-10 bg-cream text-ink border border-cream/20 flex flex-col justify-between min-h-[320px] hover:shadow-elegant transition-shadow duration-500"
             >
               <div>
                 <div className="font-serif text-coral text-6xl leading-none mb-4">"</div>
