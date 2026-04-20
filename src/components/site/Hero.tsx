@@ -63,18 +63,27 @@ const Hero = () => {
         </div>
 
         <div className="lg:col-span-5 relative animate-fade-in">
-          <div className="relative aspect-[4/5] w-full max-w-md mx-auto">
-            <div className="absolute -inset-4 bg-coral/20 -z-10 translate-x-4 translate-y-4" />
-            <div className="absolute inset-0 bg-ink -z-10 -translate-x-3 -translate-y-3" />
-            <img
-              src={heroImg}
-              alt="Valdireni Alves, palestrante e jornalista, especialista em comunicação estratégica"
-              className="relative w-full h-full object-cover shadow-elegant"
-              loading="eager"
-            />
-            <div className="absolute -bottom-6 -right-6 bg-cream px-5 py-4 shadow-soft border border-border max-w-[220px]">
-              <div className="text-xs tracking-[0.2em] uppercase text-coral font-semibold">Autora</div>
-              <div className="font-serif text-base mt-1 leading-snug">Você é do Tamanho da Sua Comunicação</div>
+          <div className="relative mx-auto w-[260px] sm:w-[340px] lg:w-full max-w-md">
+            <div className="absolute -inset-3 sm:-inset-4 bg-coral/25 -z-10 translate-x-3 translate-y-3 sm:translate-x-4 sm:translate-y-4" aria-hidden />
+            <div className="absolute inset-0 bg-ink -z-10 -translate-x-2 -translate-y-2 sm:-translate-x-3 sm:-translate-y-3" aria-hidden />
+
+            <div className="relative aspect-[4/5] overflow-hidden shadow-elegant">
+              <img
+                src={heroImg}
+                alt="Valdireni Alves, palestrante e jornalista, especialista em comunicação estratégica"
+                className="w-full h-full object-cover object-center transition-transform duration-700 hover:scale-[1.03]"
+                loading="eager"
+              />
+              <div
+                className="pointer-events-none absolute inset-0"
+                style={{ background: "linear-gradient(180deg, transparent 55%, hsl(var(--ink) / 0.35) 100%)" }}
+                aria-hidden
+              />
+            </div>
+
+            <div className="absolute -bottom-5 -right-3 sm:-bottom-6 sm:-right-6 bg-cream px-4 py-3 sm:px-5 sm:py-4 shadow-soft border border-border max-w-[200px] sm:max-w-[220px]">
+              <div className="text-[10px] sm:text-xs tracking-[0.2em] uppercase text-coral font-semibold">Autora</div>
+              <div className="font-serif text-sm sm:text-base mt-1 leading-snug">Você é do Tamanho da Sua Comunicação</div>
             </div>
           </div>
         </div>
