@@ -198,4 +198,34 @@
     background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
     mix-blend-mode: multiply;
   }
+
+  /* ===== Scroll Reveal System ===== */
+  .reveal {
+    opacity: 0;
+    will-change: opacity, transform;
+    transition:
+      opacity 0.9s var(--ease-elegant),
+      transform 1s var(--ease-elegant),
+      filter 0.9s var(--ease-elegant);
+  }
+  .reveal-up     { transform: translate3d(0, 40px, 0); }
+  .reveal-fade   { transform: none; filter: blur(6px); }
+  .reveal-left   { transform: translate3d(-48px, 0, 0); }
+  .reveal-right  { transform: translate3d(48px, 0, 0); }
+  .reveal-scale  { transform: scale(0.94); }
+  .reveal.is-visible {
+    opacity: 1;
+    transform: none;
+    filter: none;
+  }
+
+  /* Subtle parallax-style drift driven purely by scroll position */
+  @media (prefers-reduced-motion: no-preference) {
+    .parallax-slow { transition: transform 0.6s var(--ease-elegant); }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .reveal { opacity: 1 !important; transform: none !important; filter: none !important; transition: none !important; }
+    .animate-fade-up, .animate-fade-in { animation: none !important; }
+  }
 }
