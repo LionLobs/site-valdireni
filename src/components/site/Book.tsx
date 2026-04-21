@@ -35,7 +35,7 @@ const Book = () => {
           </div>
 
           <div className="mt-12 grid grid-cols-3 gap-4 max-w-md">
-            {["Você é do Tamanho", "Entre Drones e Dinossauros", "Mulheres que Cruzaram Oceanos"].map((b) => (
+            {["Você é do Tamanho da Sua Comunicação", "Entre Drones e Dinossauros", "Mulheres que Cruzaram Oceanos"].map((b) => (
               <div key={b} className="border border-border p-4 bg-cream">
                 <div className="font-serif text-sm leading-tight text-pretty">{b}</div>
               </div>
