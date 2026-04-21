@@ -9,12 +9,6 @@ const Hero = () => {
 
       <div className="container-editorial grid lg:grid-cols-12 gap-10 lg:gap-16 items-center">
         <div className="lg:col-span-7 animate-fade-up">
-          <div className="inline-flex items-center gap-3 px-4 py-2 mb-6 bg-coral/10 border border-coral/20 rounded-full">
-            <span className="text-[10px] sm:text-xs tracking-[0.2em] uppercase text-coral font-semibold">Autora</span>
-            <span className="h-3 w-px bg-coral/30" />
-            <span className="font-serif text-xs sm:text-sm text-foreground">Você é do Tamanho da Sua Comunicação</span>
-          </div>
-
           <div className="flex items-center gap-3 mb-8">
             <span className="h-px w-12 bg-coral" />
             <span className="text-xs tracking-[0.3em] uppercase text-warm-gray font-medium" style={{ color: "hsl(var(--warm-gray))" }}>
@@ -87,6 +81,10 @@ const Hero = () => {
               />
             </div>
 
+            <div className="absolute -bottom-5 -right-3 sm:-bottom-6 sm:-right-6 bg-cream px-4 py-3 sm:px-5 sm:py-4 shadow-soft border border-border max-w-[200px] sm:max-w-[220px]">
+              <div className="text-[10px] sm:text-xs tracking-[0.2em] uppercase text-coral font-semibold">Autora</div>
+              <div className="font-serif text-sm sm:text-base mt-1 leading-snug">Você é do Tamanho da Sua Comunicação</div>
+            </div>
           </div>
         </div>
       </div>
