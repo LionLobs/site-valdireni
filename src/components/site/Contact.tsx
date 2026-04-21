@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { toast } from "sonner";
-import { Phone, Instagram, Globe, Mail } from "lucide-react";
+import { Phone, Instagram, Globe, Mail, Linkedin } from "lucide-react";
 
 const Contact = () => {
   const [loading, setLoading] = useState(false);
@@ -121,7 +121,7 @@ const Contact = () => {
               <p className="text-xs tracking-[0.25em] uppercase text-cream/50 mb-4 text-center">
                 Ou fale direto
               </p>
-              <div className="grid grid-cols-3 gap-3">
+              <div className="grid grid-cols-4 gap-3">
                 <a
                   href="https://wa.me/5541992885787"
                   target="_blank"
@@ -149,6 +149,16 @@ const Contact = () => {
                 >
                   <Mail size={18} className="text-cream group-hover:text-cream" />
                   <span className="text-[10px] tracking-wider uppercase text-cream/70 group-hover:text-cream">E-mail</span>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/valdirenialves"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="LinkedIn"
+                  className="flex flex-col items-center gap-2 py-3 border border-cream/15 hover:bg-coral hover:border-coral transition-all group"
+                >
+                  <Linkedin size={18} className="text-cream group-hover:text-cream" />
+                  <span className="text-[10px] tracking-wider uppercase text-cream/70 group-hover:text-cream">LinkedIn</span>
                 </a>
               </div>
             </div>
