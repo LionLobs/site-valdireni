@@ -1,4 +1,4 @@
-import livro from "@/assets/valdireni-livro.jpg";
+import livro from "@/assets/valdireni-book.jpeg";
 
 const Book = () => {
   return (
