@@ -90,7 +90,7 @@ const GalleryCard = ({ photo }: { photo: { src: string; label: string } }) => (
       src={photo.src}
       alt={photo.label}
       loading="lazy"
-      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+      className="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
     />
     <div className="absolute inset-0 bg-gradient-to-t from-ink/70 via-ink/0 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
     <figcaption className="absolute bottom-4 left-4 text-cream text-xs tracking-[0.2em] uppercase opacity-0 group-hover:opacity-100 transition-opacity duration-500">
