@@ -1,4 +1,4 @@
-import sofa from "@/assets/valdireni-sofa.jpg";
+import palco from "@/assets/valdireni-palco.jpeg";
 
 const reasons = [
   { t: "Conteúdo Prático", d: "Aplicável de imediato — não apenas teoria de palco." },
@@ -17,8 +17,8 @@ const WhyHire = () => {
         <div className="lg:col-span-5">
           <div className="relative aspect-[4/5] max-w-md">
             <img
-              src={sofa}
-              alt="Valdireni Alves em ambiente de leitura"
+              src={palco}
+              alt="Valdireni Alves palestrando no palco"
               className="w-full h-full object-cover shadow-elegant"
               loading="lazy"
             />
