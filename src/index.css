@@ -213,6 +213,11 @@
   .reveal-left   { transform: translate3d(-48px, 0, 0); }
   .reveal-right  { transform: translate3d(48px, 0, 0); }
   .reveal-scale  { transform: scale(0.94); }
+  .reveal-color-photo {
+    filter: grayscale(1);
+    transition: filter 1s var(--ease-elegant);
+  }
+  .reveal.is-visible .reveal-color-photo { filter: grayscale(0); }
   .reveal.is-visible {
     opacity: 1;
     transform: none;
