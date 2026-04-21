@@ -19,7 +19,7 @@ const WhyHire = () => {
             <img
               src={sofa}
               alt="Valdireni Alves em ambiente de leitura"
-              className="w-full h-full object-cover grayscale transition-all duration-1000 shadow-elegant [.is-visible_&]:grayscale-0"
+              className="reveal-color-photo w-full h-full object-cover shadow-elegant"
               loading="lazy"
             />
             <div className="absolute inset-0 ring-1 ring-cream/10" />
