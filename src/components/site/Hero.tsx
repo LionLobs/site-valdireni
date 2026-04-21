@@ -7,10 +7,10 @@ const Hero = () => {
       <div className="absolute inset-0 -z-10" style={{ background: "var(--gradient-radial-coral)" }} />
       <div className="absolute top-40 -right-20 w-[500px] h-[500px] rounded-full bg-coral/10 blur-3xl -z-10" />
 
-      <div className="container-editorial grid lg:grid-cols-12 gap-10 lg:gap-16 items-center">
-        {/* Foto — aparece primeiro no mobile, à esquerda no desktop */}
-        <div className="lg:col-span-5 lg:order-1 relative animate-fade-in order-1">
-          <div className="relative mx-auto w-[260px] sm:w-[340px] lg:w-full max-w-md">
+      <div className="container-editorial flex flex-row gap-5 sm:gap-8 lg:gap-16 items-start lg:items-center">
+        {/* Foto — sempre à esquerda do texto, em mobile e desktop */}
+        <div className="shrink-0 w-[110px] sm:w-[180px] md:w-[260px] lg:w-[42%] lg:max-w-md relative animate-fade-in mt-2 lg:mt-0">
+          <div className="relative w-full">
             <div className="absolute -inset-3 sm:-inset-4 bg-coral/25 -z-10 translate-x-3 translate-y-3 sm:translate-x-4 sm:translate-y-4" aria-hidden />
             <div className="absolute inset-0 bg-ink -z-10 -translate-x-2 -translate-y-2 sm:-translate-x-3 sm:-translate-y-3" aria-hidden />
 
@@ -28,23 +28,23 @@ const Hero = () => {
               />
             </div>
 
-            <div className="absolute -bottom-5 -right-3 sm:-bottom-6 sm:-right-6 bg-cream px-4 py-3 sm:px-5 sm:py-4 shadow-soft border border-border max-w-[200px] sm:max-w-[220px]">
+            <div className="hidden md:block absolute -bottom-5 -right-3 sm:-bottom-6 sm:-right-6 bg-cream px-4 py-3 sm:px-5 sm:py-4 shadow-soft border border-border max-w-[200px] sm:max-w-[220px]">
               <div className="text-[10px] sm:text-xs tracking-[0.2em] uppercase text-coral font-semibold">Autora</div>
               <div className="font-serif text-sm sm:text-base mt-1 leading-snug">Você é do Tamanho da Sua Comunicação</div>
             </div>
           </div>
         </div>
 
-        {/* Texto — à direita no desktop */}
-        <div className="lg:col-span-7 lg:order-2 animate-fade-up order-2">
-          <div className="flex items-center gap-3 mb-8">
-            <span className="h-px w-12 bg-coral" />
-            <span className="text-xs tracking-[0.3em] uppercase text-warm-gray font-medium" style={{ color: "hsl(var(--warm-gray))" }}>
+        {/* Texto — sempre à direita */}
+        <div className="flex-1 min-w-0 animate-fade-up">
+          <div className="flex items-center gap-3 mb-4 sm:mb-8">
+            <span className="h-px w-6 sm:w-12 bg-coral" />
+            <span className="text-[10px] sm:text-xs tracking-[0.3em] uppercase text-warm-gray font-medium" style={{ color: "hsl(var(--warm-gray))" }}>
               Palestrante · Brasil & Portugal
             </span>
           </div>
 
-          <h1 className="font-serif text-5xl sm:text-6xl lg:text-7xl xl:text-[88px] leading-[0.95] tracking-tight text-balance">
+          <h1 className="font-serif text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-[88px] leading-[0.95] tracking-tight text-balance">
             Você é do <em className="text-coral not-italic font-medium italic">tamanho</em> da sua{" "}
             <span className="relative inline-block">
               comunicação
