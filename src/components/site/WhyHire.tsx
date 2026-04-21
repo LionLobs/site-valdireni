@@ -15,11 +15,11 @@ const WhyHire = () => {
 
       <div className="container-editorial relative z-10 grid lg:grid-cols-12 gap-16 items-center">
         <div className="lg:col-span-5">
-          <div className="relative aspect-[4/5] max-w-md">
+          <div className="relative aspect-[4/5] max-w-md group">
             <img
               src={sofa}
               alt="Valdireni Alves em ambiente de leitura"
-              className="w-full h-full object-cover shadow-elegant"
+              className="w-full h-full object-cover grayscale group-[.is-visible]:grayscale-0 transition-all duration-1000 shadow-elegant"
               loading="lazy"
             />
             <div className="absolute inset-0 ring-1 ring-cream/10" />

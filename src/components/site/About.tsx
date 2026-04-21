@@ -9,7 +9,7 @@ const About = () => {
             <img
               src={portrait}
               alt="Retrato profissional de Valdireni Alves"
-              className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700 shadow-elegant"
+              className="w-full h-full object-cover grayscale transition-all duration-700 shadow-elegant"
               loading="lazy"
             />
             <div className="absolute -bottom-6 -left-6 bg-coral text-cream p-6 max-w-[260px]">
