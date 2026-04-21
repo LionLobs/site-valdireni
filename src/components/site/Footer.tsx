@@ -18,7 +18,7 @@ const Footer = () => {
         <div className="text-xs text-cream/50 text-center md:text-right">
           © {new Date().getFullYear()} Valdireni Alves
           <span className="block md:inline md:ml-2 text-cream/40">
-            · Criado por <a href="#" className="text-coral hover:text-coral-deep transition-colors">LionLobs</a>
+            · Criado por <a href="https://www.instagram.com/lionlobs" target="_blank" rel="noopener noreferrer" className="text-coral hover:text-coral-deep transition-colors">@lionlobs</a>
           </span>
         </div>
       </div>
