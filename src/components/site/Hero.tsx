@@ -64,7 +64,7 @@ const Hero = () => {
 
         <div className="lg:col-span-5 relative animate-fade-in order-1 lg:order-2">
           <div className="relative mx-auto w-[260px] sm:w-[340px] lg:w-full max-w-md">
-            <div className="absolute -inset-3 sm:-inset-4 bg-coral/25 -z-10 translate-x-3 translate-y-3 sm:translate-x-4 sm:translate-y-4" aria-hidden />
+            <div className="absolute -inset-3 sm:-inset-4 bg-coral -z-10 translate-x-3 translate-y-3 sm:translate-x-4 sm:translate-y-4" aria-hidden />
             <div className="absolute inset-0 bg-ink -z-10 -translate-x-2 -translate-y-2 sm:-translate-x-3 sm:-translate-y-3" aria-hidden />
 
             <div className="relative aspect-[4/5] overflow-hidden shadow-elegant">
