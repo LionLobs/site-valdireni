@@ -26,7 +26,9 @@ const Book = () => {
 
           <div className="mt-10 flex flex-wrap gap-4">
             <a
-              href="#contato"
+              href="https://www.amazon.com.br/s?k=Voc%C3%AA+%C3%A9+do+Tamanho+da+Sua+Comunica%C3%A7%C3%A3o+Valdireni+Alves"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-3 px-7 py-4 bg-ink text-cream text-sm font-medium tracking-wide hover:bg-coral transition-colors duration-300"
             >
               Adquirir o livro
@@ -34,12 +36,10 @@ const Book = () => {
             </a>
           </div>
 
-          <div className="mt-12 grid grid-cols-3 gap-4 max-w-md">
-            {["Você é do Tamanho da Sua Comunicação", "Entre Drones e Dinossauros", "Mulheres que Cruzaram Oceanos"].map((b) => (
-              <div key={b} className="border border-border p-4 bg-cream">
-                <div className="font-serif text-sm leading-tight text-pretty">{b}</div>
-              </div>
-            ))}
+          <div className="mt-12 grid grid-cols-1 gap-4 max-w-xs">
+            <div className="border border-border p-4 bg-cream">
+              <div className="font-serif text-sm leading-tight text-pretty">Você é do Tamanho da Sua Comunicação</div>
+            </div>
           </div>
         </div>
 
