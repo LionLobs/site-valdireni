@@ -15,8 +15,10 @@ const Marquee = ({ items, reverse = false, variant = "ink", speedSeconds }: Marq
   return (
     <div className={`${variants[variant]} py-3 md:py-4 overflow-hidden`}>
       <div className="marquee">
-        <div className={`marquee-track ${reverse ? "marquee-track-reverse" : ""}`}>
-          {/* speed override */}
+        <div
+          className={`marquee-track ${reverse ? "marquee-track-reverse" : ""}`}
+          style={speedSeconds ? { animationDuration: `${speedSeconds}s` } : undefined}
+        >
           {[...items, ...items, ...items].map((item, i) => (
             <span
               key={i}
