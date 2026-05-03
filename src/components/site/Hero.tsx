@@ -28,8 +28,8 @@ const Hero = () => {
           </h1>
 
           <p className="mt-8 text-lg lg:text-xl text-muted-foreground max-w-xl leading-relaxed text-pretty">
-            Jornalista e especialista em <strong className="text-foreground font-medium">comunicação estratégica e oratória</strong> para líderes,
-            com mais de 30 anos transformando palavras em resultados — em palcos do Brasil e de Portugal.
+            Jornalista e especialista em <strong className="text-foreground font-medium">comunicação estratégica e oratória</strong> para líderes e equipes.
+            Há mais de 30 anos no palco e no mercado, transforma comunicação em posicionamento, presença e resultado. Brasil e Portugal.
           </p>
 
           <div className="mt-10 flex flex-wrap items-center gap-4">
@@ -37,14 +37,14 @@ const Hero = () => {
               href="#contato"
               className="group inline-flex items-center gap-3 px-8 py-4 bg-ink text-cream text-sm font-medium tracking-wide hover:bg-coral transition-all duration-300"
             >
-              Levar Valdireni ao seu evento
+              Para contratar Valdireni Alves
               <span className="transition-transform group-hover:translate-x-1">→</span>
             </a>
             <a
               href="#palestras"
               className="inline-flex items-center gap-3 px-8 py-4 border border-foreground/20 text-foreground text-sm font-medium tracking-wide hover:border-coral hover:text-coral transition-colors duration-300"
             >
-              Conhecer palestras
+              Conheça as palestras e os treinamentos
             </a>
           </div>
 

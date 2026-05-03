@@ -2,29 +2,54 @@ import { useEffect, useRef, useState } from "react";
 
 const items = [
   {
+    quote: "Comunicação clara, prática e transformadora. Saímos da palestra com ações concretas.",
+    author: "Líder de Equipe",
+    org: "Indústria paranaense",
+  },
+  {
     quote: "Evento com ela é certeza de sucesso. Conduz o palco com leveza e profundidade.",
-    author: "Diretora de RH",
+    author: "Diretor de RH",
     org: "Grupo Empresarial · Curitiba",
   },
   {
-    quote: "Comunicação clara, prática e transformadora. Saímos da palestra com ações concretas.",
-    author: "Líder de Equipe",
-    org: "Multinacional do setor automotivo",
-  },
-  {
     quote: "Profissional que entrega muito além do esperado. Conexão imediata com a plateia.",
-    author: "Organizador",
-    org: "Congresso Nacional de Liderança",
+    author: "Organizador de evento",
+    org: "RS",
   },
   {
-    quote: "Uma das melhores palestras que já tivemos. Impacto real na cultura da empresa.",
+    quote: "Uma das melhores palestras que já tivemos. Você entregou A PALESTRA.",
+    author: "Organizador de evento",
+    org: "Nacional",
+  },
+  {
+    quote: "A Valdireni Alves é a profissional de comunicação mais completa que eu conheço. Ela entrega muito. No palco ou nos treinamentos.",
+    author: "Diretora/fundadora",
+    org: "Empresa de Comunicação Corporativa",
+  },
+  {
+    quote: "Profissional de extrema inteligência, agilidade e competência. Evento com ela é sinal de sucesso.",
+    author: "Estrategista de Neuromarketing e eventos",
+    org: "",
+  },
+  {
+    quote: "A melhor palestra de comunicação que eu já participei. Transformou a minha empresa e a minha forma de ver a vida.",
+    author: "Empresária",
+    org: "Setor da beleza",
+  },
+  {
+    quote: "Conheci a Val há muitos anos, quando ela ainda atuava como executiva de comunicação. Ela sempre foi diferenciada e comprometida. Hoje, no palco, ela mostra e ensina o que vive.",
+    author: "Executiva",
+    org: "Setor de comunicação",
+  },
+  {
+    quote: "A Valdireni Alves trouxe para o nosso evento o que estávamos precisando: conhecimento, técnica, motivação e algo que não vou esquecer — chova ou faça sol, comunicação é poder.",
+    author: "Produtora",
+    org: "Setor do agronegócio",
+  },
+  {
+    quote: "Valdireni Alves, a Vla, é a profissional ideal para falar de comunicação, no seu evento ou na sua equipe. Conheço o trabalho dela há 10 anos.",
     author: "CEO",
-    org: "Startup de tecnologia · Lisboa",
-  },
-  {
-    quote: "Valdireni transforma qualquer ambiente. Energia, conteúdo e resultado na mesma medida.",
-    author: "Coordenadora de Eventos",
-    org: "Federação das Indústrias · São Paulo",
+    org: "Empresa de tecnologia",
   },
 ];
 
@@ -45,7 +70,7 @@ const Testimonials = () => {
             </span>
           </div>
           <h2 className="font-serif text-4xl lg:text-6xl leading-[1.05] tracking-tight text-balance text-cream">
-            O que dizem sobre o trabalho de Valdireni.
+            O que dizem sobre o trabalho de Valdireni Alves.
           </h2>
         </div>
 

@@ -58,8 +58,10 @@ const Index = () => {
   ];
 
   const clients = [
-    "SEBRAE", "Governo do Paraná", "Great Place To Work", "Bourbon",
-    "Gazeta do Povo", "S.Clara Comunicação", "Losango", "Congresso Cidades Digitais",
+    "Sebrae/PR", "Great Place To Work", "Losango", "Rede Cidade Digital",
+    "Pormade", "Faep/PR", "Revenda Mais", "Fecomércio/PR", "CMEG/PR",
+    "Faese/SE", "Fiep/PR", "Sauk", "Sesc/Senac/PR", "ABRH/PR",
+    "Ademicon", "Condor", "Gaya Restauro",
   ];
 
   return (

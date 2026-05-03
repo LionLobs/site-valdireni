@@ -24,7 +24,7 @@ const About = () => {
           <div className="flex items-center gap-3 mb-6">
             <span className="h-px w-12 bg-coral" />
             <span className="text-xs tracking-[0.3em] uppercase text-muted-foreground font-medium">
-              Sobre Valdireni
+              Sobre Valdireni Alves
             </span>
           </div>
 
@@ -35,9 +35,12 @@ const About = () => {
           <div className="mt-10 space-y-6 text-lg text-foreground/85 leading-relaxed text-pretty">
             <p>
               Valdireni Alves é palestrante no <strong>Brasil e em Portugal</strong>, especialista em
-              comunicação estratégica e oratória para líderes. Construiu sua trajetória no jornalismo,
-              na comunicação corporativa e na formação de líderes — atuando em grandes emissoras de
-              TV, multinacionais e instituições públicas.
+              comunicação estratégica e oratória para líderes e equipes.
+            </p>
+            <p>
+              Construiu sua trajetória no jornalismo, em emissoras de TV, como repórter, apresentadora
+              e editora-chefe; na comunicação corporativa, em empresas nacionais e multinacionais; na
+              formação de líderes; em salas de aula e instituições públicas, em cargos de gestão.
             </p>
             <p>
               Autora do livro <em>"Você é do Tamanho da Sua Comunicação"</em> e coautora de
