@@ -30,8 +30,16 @@ const talks = [
     title: "A Menina que Aprendeu a Voar e Cruzou Oceanos",
     desc: "A história real de uma empreendedora que nasceu numa casa de chão batido e conquistou palcos internacionais.",
     tags: ["Inspiração", "Superação", "Empreendedorismo"],
-    audience: "Todos os públicos",
+    audience: "Público feminino — empreendedoras, mulheres do agro e executivas",
     duration: "60–90 min",
+  },
+  {
+    n: "05",
+    title: "Treinamentos In Company",
+    desc: "Conteúdo personalizado para empresas que desejam aprofundar o desenvolvimento da comunicação em suas equipes e lideranças. Estruturados de forma prática, com aplicação direta no dia a dia, trabalhando temas como comunicação assertiva, oratória, liderança, comunicação não violenta, apresentações de sucesso e relacionamento profissional. Cada projeto é desenhado de acordo com a realidade e os objetivos da organização.",
+    tags: ["In Company", "Equipes", "Lideranças"],
+    audience: "Empresas e organizações",
+    duration: "Sob medida",
   },
 ];
 
