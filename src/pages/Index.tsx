@@ -73,7 +73,7 @@ const Index = () => {
       <Reveal variant="up" delay={80}><Talks /></Reveal>
       <Reveal variant="up"><WhyHire /></Reveal>
       <Reveal variant="scale"><Gallery /></Reveal>
-      <Reveal variant="fade"><Marquee items={clients} variant="cream" reverse /></Reveal>
+      <Reveal variant="fade"><Marquee items={clients} variant="cream" reverse speedSeconds={90} /></Reveal>
       <Reveal variant="left"><Book /></Reveal>
       <Reveal variant="up"><Testimonials /></Reveal>
       <Reveal variant="up"><Contact /></Reveal>
