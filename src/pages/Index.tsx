@@ -5,6 +5,7 @@ import About from "@/components/site/About";
 import Talks from "@/components/site/Talks";
 import WhyHire from "@/components/site/WhyHire";
 import Gallery from "@/components/site/Gallery";
+import VideoIntro from "@/components/site/VideoIntro";
 import Book from "@/components/site/Book";
 import Testimonials from "@/components/site/Testimonials";
 import Contact from "@/components/site/Contact";
@@ -72,6 +73,7 @@ const Index = () => {
       <Reveal variant="up"><About /></Reveal>
       <Reveal variant="up" delay={80}><Talks /></Reveal>
       <Reveal variant="up"><WhyHire /></Reveal>
+      <Reveal variant="fade"><VideoIntro /></Reveal>
       <Reveal variant="scale"><Gallery /></Reveal>
       <Reveal variant="fade"><Marquee items={clients} variant="cream" reverse speedSeconds={90} /></Reveal>
       <Reveal variant="left"><Book /></Reveal>
