@@ -77,7 +77,7 @@ const VideoIntro = () => {
           <div className="relative mx-auto w-full max-w-[420px]">
             <div className="absolute -inset-3 bg-coral -z-10 translate-x-3 translate-y-3" aria-hidden />
             <div className="absolute inset-0 bg-cream -z-10 -translate-x-2 -translate-y-2" aria-hidden />
-            <div className="relative aspect-[5/4] overflow-hidden shadow-elegant bg-ink">
+            <div className="relative aspect-square overflow-hidden shadow-elegant bg-ink">
               <video
                 ref={videoRef}
                 className="w-full h-full object-cover"
