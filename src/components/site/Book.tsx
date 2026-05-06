@@ -26,7 +26,7 @@ const Book = () => {
 
           <div className="mt-10 flex flex-wrap gap-4">
             <a
-              href="https://www.amazon.com.br/s?k=Voc%C3%AA+%C3%A9+do+Tamanho+da+Sua+Comunica%C3%A7%C3%A3o+Valdireni+Alves"
+              href="https://greatpeoplebooks.com.br/produtos/voce-e-do-tamanho-da-sua-comunicacao/"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-3 px-7 py-4 bg-ink text-cream text-sm font-medium tracking-wide hover:bg-coral transition-colors duration-300"
