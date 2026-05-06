@@ -96,6 +96,29 @@ const VideoIntro = () => {
           </div>
         </div>
       </div>
+
+      <div className="relative z-10 container-editorial pb-16 lg:pb-24">
+        <div className="flex items-center gap-3 mb-6">
+          <span className="h-px w-12 bg-coral" />
+          <span className="text-xs tracking-[0.3em] uppercase text-cream/80 font-medium">
+            Mais um momento
+          </span>
+        </div>
+        <div className="relative mx-auto w-full max-w-4xl">
+          <div className="absolute -inset-3 bg-coral -z-10 translate-x-3 translate-y-3" aria-hidden />
+          <div className="absolute inset-0 bg-cream -z-10 -translate-x-2 -translate-y-2" aria-hidden />
+          <div className="relative aspect-video overflow-hidden shadow-elegant bg-ink">
+            <iframe
+              className="w-full h-full"
+              src="https://www.youtube.com/embed/1vwKdEtOzMw"
+              title="Valdireni Alves — palestra"
+              loading="lazy"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+            />
+          </div>
+        </div>
+      </div>
     </section>
   );
 };
