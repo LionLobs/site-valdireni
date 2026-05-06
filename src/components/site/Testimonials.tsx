@@ -47,7 +47,7 @@ const items = [
     org: "Setor do agronegócio",
   },
   {
-    quote: "Valdireni Alves, a Vla, é a profissional ideal para falar de comunicação, no seu evento ou na sua equipe. Conheço o trabalho dela há 10 anos.",
+    quote: "Valdireni Alves, a Val, é a profissional ideal para falar de comunicação, no seu evento ou na sua equipe. Conheço o trabalho dela há 10 anos.",
     author: "CEO",
     org: "Empresa de tecnologia",
   },
