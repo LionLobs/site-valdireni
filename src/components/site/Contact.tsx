@@ -50,7 +50,7 @@ const Contact = () => {
               { icon: Phone, label: "(41) 99288-5787", href: "https://wa.me/5541992885787" },
               { icon: Instagram, label: "@valdirenialvesjornalista", href: "https://instagram.com/valdirenialvesjornalista" },
               { icon: Globe, label: "valdirenialves.com.br", href: "https://valdirenialves.com.br" },
-              { icon: Mail, label: "contato@valdirenialves.com.br", href: "mailto:contato@valdirenialves.com.br" },
+              { icon: Mail, label: "valdirenialves@gmail.com", href: "mailto:valdirenialves@gmail.com" },
             ].map((c) => (
               <a
                 key={c.label}
@@ -143,7 +143,7 @@ const Contact = () => {
                   <span className="text-[10px] tracking-wider uppercase text-cream/70 group-hover:text-cream">Instagram</span>
                 </a>
                 <a
-                  href="mailto:contato@valdirenialves.com.br"
+                  href="mailto:valdirenialves@gmail.com"
                   aria-label="E-mail"
                   className="flex flex-col items-center gap-2 py-3 border border-cream/15 hover:bg-coral hover:border-coral transition-all group"
                 >
