@@ -288,7 +288,7 @@ const Press = () => {
         </div>
 
         <div className="relative">
-          <div className={`grid md:grid-cols-2 gap-6 lg:gap-8 transition-all duration-700 ease-in-out ${showAll ? 'max-h-[5000px] opacity-100' : 'max-h-[800px] overflow-hidden'}`}>
+          <div className={`grid md:grid-cols-2 gap-6 lg:gap-8 transition-all duration-700 ease-in-out ${showAll ? 'max-h-[5000px] opacity-100 mb-12' : 'max-h-[800px] overflow-hidden'}`}>
             {pressNews.map((item, index) => (
               <Reveal key={index} variant="up" delay={index % 4 * 100}>
                 <a
@@ -324,14 +324,14 @@ const Press = () => {
           </div>
           
           {!showAll && (
-            <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent pointer-events-none" />
+            <div className="absolute bottom-0 left-0 right-0 h-48 bg-gradient-to-t from-background via-background/80 to-transparent pointer-events-none" />
           )}
         </div>
 
-        <div className="mt-12 text-center relative z-10">
+        <div className="mt-8 text-center relative z-20">
           <button
             onClick={() => setShowAll(!showAll)}
-            className="inline-flex items-center gap-2 px-8 py-4 bg-foreground text-background text-sm font-medium tracking-wide hover:bg-coral transition-colors duration-300 rounded-full"
+            className="inline-flex items-center gap-2 px-8 py-4 bg-foreground text-background text-sm font-medium tracking-wide hover:bg-coral transition-colors duration-300 rounded-full shadow-lg"
           >
             {showAll ? "Ver menos matérias" : "Ver todas as matérias"}
           </button>
