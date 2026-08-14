@@ -287,51 +287,55 @@ const Press = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-6 lg:gap-8">
-          {visibleNews.map((item, index) => (
-            <Reveal key={index} variant="up" delay={index * 100}>
-              <a
-                href={item.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group block p-6 lg:p-8 bg-card border border-border rounded-lg hover:border-coral/40 transition-all duration-300 hover:shadow-soft"
-              >
-                <div className="flex justify-between items-start mb-4">
-                  <span className="text-[10px] tracking-[0.2em] uppercase text-coral font-semibold">
-                    {item.date}
-                  </span>
-                  <span className="text-muted-foreground group-hover:text-coral transition-colors">
-                    →
-                  </span>
-                </div>
-                <h3 className="font-serif text-xl mb-4 leading-tight group-hover:text-foreground transition-colors">
-                  {item.title}
-                </h3>
-                <div className="flex flex-wrap gap-x-4 gap-y-2 text-xs text-muted-foreground uppercase tracking-wider">
-                  <span className="flex items-center gap-1.5">
-                    <span className="w-1 h-1 rounded-full bg-coral/60" />
-                    {item.outlet}
-                  </span>
-                  <span className="flex items-center gap-1.5">
-                    <span className="w-1 h-1 rounded-full bg-coral/60" />
-                    {item.location}
-                  </span>
-                </div>
-              </a>
-            </Reveal>
-          ))}
+        <div className="relative">
+          <div className={`grid md:grid-cols-2 gap-6 lg:gap-8 transition-all duration-700 ease-in-out ${showAll ? 'max-h-[5000px] opacity-100' : 'max-h-[800px] overflow-hidden'}`}>
+            {pressNews.map((item, index) => (
+              <Reveal key={index} variant="up" delay={index % 4 * 100}>
+                <a
+                  href={item.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group block p-6 lg:p-8 bg-card border border-border rounded-lg hover:border-coral/40 transition-all duration-300 hover:shadow-soft h-full"
+                >
+                  <div className="flex justify-between items-start mb-4">
+                    <span className="text-[10px] tracking-[0.2em] uppercase text-coral font-semibold">
+                      {item.date}
+                    </span>
+                    <span className="text-muted-foreground group-hover:text-coral transition-colors">
+                      →
+                    </span>
+                  </div>
+                  <h3 className="font-serif text-xl mb-4 leading-tight group-hover:text-foreground transition-colors">
+                    {item.title}
+                  </h3>
+                  <div className="flex flex-wrap gap-x-4 gap-y-2 text-xs text-muted-foreground uppercase tracking-wider">
+                    <span className="flex items-center gap-1.5">
+                      <span className="w-1 h-1 rounded-full bg-coral/60" />
+                      {item.outlet}
+                    </span>
+                    <span className="flex items-center gap-1.5">
+                      <span className="w-1 h-1 rounded-full bg-coral/60" />
+                      {item.location}
+                    </span>
+                  </div>
+                </a>
+              </Reveal>
+            ))}
+          </div>
+          
+          {!showAll && (
+            <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent pointer-events-none" />
+          )}
         </div>
 
-        {pressNews.length > 4 && (
-          <div className="mt-12 text-center">
-            <button
-              onClick={() => setShowAll(!showAll)}
-              className="inline-flex items-center gap-2 px-8 py-4 border border-foreground/20 text-foreground text-sm font-medium tracking-wide hover:border-coral hover:text-coral transition-colors duration-300"
-            >
-              {showAll ? "Ver menos" : "Ver todas as matérias"}
-            </button>
-          </div>
-        )}
+        <div className="mt-12 text-center relative z-10">
+          <button
+            onClick={() => setShowAll(!showAll)}
+            className="inline-flex items-center gap-2 px-8 py-4 bg-foreground text-background text-sm font-medium tracking-wide hover:bg-coral transition-colors duration-300 rounded-full"
+          >
+            {showAll ? "Ver menos matérias" : "Ver todas as matérias"}
+          </button>
+        </div>
       </div>
     </section>
   );
