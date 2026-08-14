@@ -9,6 +9,7 @@ import VideoIntro from "@/components/site/VideoIntro";
 import Book from "@/components/site/Book";
 import Testimonials from "@/components/site/Testimonials";
 import Contact from "@/components/site/Contact";
+import Press from "@/components/site/Press";
 import Footer from "@/components/site/Footer";
 import Reveal from "@/components/site/Reveal";
 import { useEffect } from "react";
@@ -78,6 +79,7 @@ const Index = () => {
       <Reveal variant="fade"><Marquee items={clients} variant="cream" reverse speedSeconds={90} /></Reveal>
       <Reveal variant="left"><Book /></Reveal>
       <Reveal variant="up"><Testimonials /></Reveal>
+      <Reveal variant="up"><Press /></Reveal>
       <Reveal variant="up"><Contact /></Reveal>
       <Footer />
     </main>

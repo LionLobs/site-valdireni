@@ -13,6 +13,7 @@ const Footer = () => {
         <div className="flex items-center gap-8 text-xs tracking-wider uppercase">
           <a href="#sobre" className="hover:text-coral transition-colors">Sobre</a>
           <a href="#palestras" className="hover:text-coral transition-colors">Palestras</a>
+          <a href="#imprensa" className="hover:text-coral transition-colors">Imprensa</a>
           <a href="#contato" className="hover:text-coral transition-colors">Contato</a>
         </div>
         <div className="text-xs text-cream/50 text-center md:text-right">
