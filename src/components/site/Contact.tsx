@@ -151,7 +151,7 @@ const Contact = () => {
                   <span className="text-[10px] tracking-wider uppercase text-cream/70 group-hover:text-cream">E-mail</span>
                 </a>
                 <a
-                  href="https://www.linkedin.com/in/valdirenialves"
+                  href="https://www.linkedin.com/in/valdireni-alves/"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="LinkedIn"
