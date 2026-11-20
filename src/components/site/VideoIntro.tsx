@@ -1,9 +1,22 @@
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Volume2, VolumeX } from "lucide-react";
 
 const VideoIntro = () => {
   const videoRef = useRef<HTMLVideoElement>(null);
   const [muted, setMuted] = useState(true);
+  const [ytOn, setYtOn] = useState(false);
+
+  // Start downloading/playing the clip only when it scrolls near the screen
+  useEffect(() => {
+    const v = videoRef.current;
+    if (!v) return;
+    const obs = new IntersectionObserver(([e]) => {
+      if (e.isIntersecting) { v.preload = "auto"; v.play().catch(() => {}); }
+      else v.pause();
+    }, { rootMargin: "200px" });
+    obs.observe(v);
+    return () => obs.disconnect();
+  }, []);
 
   const toggleSound = () => {
     const v = videoRef.current;
@@ -70,7 +83,6 @@ const VideoIntro = () => {
               <video
                 ref={videoRef}
                 className="w-full h-full object-cover"
-                autoPlay
                 muted={muted}
                 loop
                 playsInline
@@ -97,14 +109,35 @@ const VideoIntro = () => {
           <div className="absolute -inset-3 bg-coral -z-10 translate-x-3 translate-y-3" aria-hidden />
           <div className="absolute inset-0 bg-cream -z-10 -translate-x-2 -translate-y-2" aria-hidden />
           <div className="relative aspect-video overflow-hidden shadow-elegant bg-ink">
-            <iframe
-              className="w-full h-full"
-              src="https://www.youtube.com/embed/1vwKdEtOzMw"
-              title="Valdireni Alves — palestra"
-              loading="lazy"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowFullScreen
-            />
+            {ytOn ? (
+              <iframe
+                className="w-full h-full"
+                src="https://www.youtube.com/embed/1vwKdEtOzMw?autoplay=1"
+                title="Valdireni Alves — palestra"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              />
+            ) : (
+              <button
+                type="button"
+                onClick={() => setYtOn(true)}
+                className="group absolute inset-0 w-full h-full"
+                aria-label="Assistir palestra de Valdireni Alves no YouTube"
+              >
+                <img
+                  src="https://i.ytimg.com/vi/1vwKdEtOzMw/hqdefault.jpg"
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                  className="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity"
+                />
+                <span className="absolute inset-0 flex items-center justify-center">
+                  <span className="flex items-center justify-center w-20 h-20 rounded-full bg-coral text-cream shadow-coral transition-transform group-hover:scale-110">
+                    <svg viewBox="0 0 24 24" className="w-8 h-8 ml-1" fill="currentColor" aria-hidden><path d="M8 5v14l11-7z" /></svg>
+                  </span>
+                </span>
+              </button>
+            )}
           </div>
         </div>
       </div>

@@ -1,4 +1,4 @@
-import portrait from "@/assets/valdireni-portrait.jpg";
+import portrait from "@/assets/valdireni-portrait.webp";
 
 const About = () => {
   return (

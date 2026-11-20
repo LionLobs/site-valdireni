@@ -1,4 +1,4 @@
-import palco from "@/assets/valdireni-palco.jpeg";
+import palco from "@/assets/valdireni-palco.webp";
 
 const reasons = [
   { t: "Conteúdo Prático", d: "Aplicável de imediato — não apenas teoria de palco." },

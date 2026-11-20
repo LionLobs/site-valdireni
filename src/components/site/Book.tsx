@@ -1,4 +1,4 @@
-import livro from "@/assets/valdireni-book.jpeg";
+import livro from "@/assets/valdireni-book.webp";
 
 const Book = () => {
   return (

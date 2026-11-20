@@ -1,7 +1,7 @@
-import g1 from "@/assets/gallery-1.jpeg";
-import g2 from "@/assets/gallery-2.jpeg";
-import g3 from "@/assets/gallery-3.jpeg";
-import g4 from "@/assets/gallery-4.jpeg";
+import g1 from "@/assets/gallery-1.webp";
+import g2 from "@/assets/gallery-2.webp";
+import g3 from "@/assets/gallery-3.webp";
+import g4 from "@/assets/gallery-4.webp";
 import { useState } from "react";
 
 const row1 = [
