@@ -68,7 +68,7 @@ const Hero = () => {
             <div className="absolute inset-0 bg-ink -z-10 -translate-x-2 -translate-y-2 sm:-translate-x-3 sm:-translate-y-3" aria-hidden />
 
             <div className="relative aspect-[4/5] overflow-hidden shadow-elegant">
-              <img
+              <img fetchPriority="high" decoding="async"
                 src={heroImg}
                 alt="Valdireni Alves, palestrante e jornalista, especialista em comunicação estratégica"
                 className="w-full h-full object-cover object-top transition-transform duration-700 hover:scale-[1.03]"

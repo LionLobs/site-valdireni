@@ -5,7 +5,7 @@ const Footer = () => {
     <footer className="bg-ink text-cream/70 border-t border-cream/10 py-12">
       <div className="container-editorial flex flex-col md:flex-row items-center justify-between gap-6">
         <div className="flex items-center gap-4">
-          <img src={logo} alt="Valdireni Alves" className="h-12 w-auto invert brightness-0 opacity-90" />
+          <img loading="lazy" decoding="async" src={logo} alt="Valdireni Alves" className="h-12 w-auto invert brightness-0 opacity-90" />
           <div className="text-xs tracking-wider uppercase text-cream/50">
             Especialista em comunicação e oratória
           </div>

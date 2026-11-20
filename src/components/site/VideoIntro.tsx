@@ -20,18 +20,7 @@ const VideoIntro = () => {
   return (
     <section className="relative w-full overflow-hidden bg-ink">
       {/* Blurred background fill (same video) so the frame is never cropped */}
-      <video
-        className="absolute inset-0 w-full h-full object-cover scale-110 blur-2xl opacity-50"
-        autoPlay
-        muted
-        loop
-        playsInline
-        preload="metadata"
-        aria-hidden
-      >
-        <source src="/media/valdireni-bg.webm" type="video/webm" />
-        <source src="/media/valdireni-bg.mp4" type="video/mp4" />
-      </video>
+      <img src="/media/valdireni-bg-poster.jpg" alt="" aria-hidden loading="lazy" decoding="async" className="absolute inset-0 w-full h-full object-cover scale-110 blur-2xl opacity-50" />
 
       {/* Brand color wash on top of the blurred bg */}
       <div
@@ -85,7 +74,7 @@ const VideoIntro = () => {
                 muted={muted}
                 loop
                 playsInline
-                preload="metadata"
+                preload="none"
                 poster="/media/valdireni-bg-poster.jpg"
                 onClick={toggleSound}
               >
